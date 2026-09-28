@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindMyTrain — Railway Information</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="brand">
+                <div class="brand-mark">🚆</div>
+                <div>
+                    <h1>FindMyTrain</h1>
+                    <p>Search trains, explore routes & check live status</p>
+                </div>
+            </div>
+            <div class="hero-badge">Railway Information</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card search-card">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">TRAIN</span>
+                    <h2>Find a Train</h2>
+                    <p>Search using train number or train name.</p>
+                </div>
+                <div class="section-icon">🔎</div>
+            </div>
+
+            <div class="search-row">
+                <input id="trainSearch" type="text" placeholder="e.g. 12919 or Malwa SF Express" autocomplete="off">
+                <button id="searchButton" class="primary">Search Train</button>
+            </div>
+            <div id="results"></div>
+        </section>
+
+        <section class="card search-card">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">STATION</span>
+                    <h2>Find Trains at a Station</h2>
+                    <p>Search by station name or station code.</p>
+                </div>
+                <div class="section-icon">📍</div>
+            </div>
+
+            <div class="search-row">
+                <input id="stationSearch" type="text" placeholder="e.g. Rana Pratap Nagar or RPZ" autocomplete="off">
+                <button id="stationSearchButton" class="primary">Search Station</button>
+            </div>
+            <div id="stationResults"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>FindMyTrain • Train information & live railway status</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
